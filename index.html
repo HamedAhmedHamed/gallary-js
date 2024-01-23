@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallary</title>
+</head>
+<style>
+  #wrapper {
+    margin: 0 auto;
+    width: 620px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  /* #wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  } */
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  } 
+  .item img {
+    border-radius: 0.3rem;
+  }
+  .removed {
+    visibility: hidden;
+  }
+</style>
+<script defer src="index.js"></script>
+<body>
+  <div id="wrapper"></div> 
+</body>
+</html>
